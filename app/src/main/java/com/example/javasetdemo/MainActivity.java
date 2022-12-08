@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
      * @param v
      */
     public void onLinkedList(View v) {
-
+        startActivity(new Intent(this, LinkedListActivity.class));
     }
 
     /**
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
      * @param v
      */
     public void onVector(View v) {
-
+        startActivity(new Intent(this, VectorActivity.class));
     }
 
     /**

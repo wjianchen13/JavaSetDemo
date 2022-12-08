@@ -8,14 +8,14 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
 
 /**
- * ArrayList 相关使用方法
+ * LinkedList 相关使用方法
  */
-public class ArrayListActivity extends AppCompatActivity {
+public class LinkedListActivity extends AppCompatActivity {
 
     private TextView tvDes;
 
@@ -24,7 +24,7 @@ public class ArrayListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_arraylist);
         tvDes = findViewById(R.id.tv_des);
-        tvDes.setText("测试ArrayList");
+        tvDes.setText("测试LinkedList");
     }
 
     /**
@@ -32,7 +32,7 @@ public class ArrayListActivity extends AppCompatActivity {
      * @param v
      */
     public void onAdd(View v) {
-        List<String> mList = new ArrayList<>();
+        List<String> mList = new LinkedList<>();
         mList.add("test1");
         log("add(): " + mList);
     }
@@ -42,10 +42,10 @@ public class ArrayListActivity extends AppCompatActivity {
      * @param v
      */
     public void onAddAll(View v) {
-        List<String> tList = new ArrayList<>();
+        List<String> tList = new LinkedList<>();
         tList.add("test1");
         tList.add("test2");
-        List<String> mList = new ArrayList<>();
+        List<String> mList = new LinkedList<>();
         mList.addAll(tList);
         log("addAll(): " + mList);
     }
@@ -55,7 +55,7 @@ public class ArrayListActivity extends AppCompatActivity {
      * @param v
      */
     public void onClear(View v) {
-        List<String> mList = new ArrayList<>();
+        List<String> mList = new LinkedList<>();
         mList.add("test1");
         log("clear(): " + mList);
         mList.clear();
@@ -67,7 +67,7 @@ public class ArrayListActivity extends AppCompatActivity {
      * @param v
      */
     public void onContains(View v) {
-        List<String> tList = new ArrayList<>();
+        List<String> tList = new LinkedList<>();
         tList.add("test1");
         tList.add("test2");
         log("contains(): " + tList.contains("test2"));
@@ -78,11 +78,11 @@ public class ArrayListActivity extends AppCompatActivity {
      * @param v
      */
     public void onContainsAll(View v) {
-        List<String> mList = new ArrayList<>();
+        List<String> mList = new LinkedList<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
-        List<String> tList = new ArrayList<>();
+        List<String> tList = new LinkedList<>();
         tList.add("test1");
         tList.add("test2");
         log("containsAll(): " + mList.contains(tList));
@@ -93,7 +93,7 @@ public class ArrayListActivity extends AppCompatActivity {
      * @param v
      */
     public void onIsEmpty(View v) {
-        List<String> mList = new ArrayList<>();
+        List<String> mList = new LinkedList<>();
         log("isEmpty(): " + mList.isEmpty());
         mList.add("test1");
         log("isEmpty(): " + mList.isEmpty());
@@ -104,7 +104,7 @@ public class ArrayListActivity extends AppCompatActivity {
      * @param v
      */
     public void onIterator(View v) {
-        List<String> mList = new ArrayList<>();
+        List<String> mList = new LinkedList<>();
         //添加集合元素
         mList.add("鸡");
         mList.add("你");
@@ -143,7 +143,7 @@ public class ArrayListActivity extends AppCompatActivity {
      * @param v
      */
     public void onRemove(View v) {
-        List<String> mList = new ArrayList<>();
+        List<String> mList = new LinkedList<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
@@ -159,12 +159,12 @@ public class ArrayListActivity extends AppCompatActivity {
      * @param v
      */
     public void onRemoveAll(View v) {
-        List<String> mList = new ArrayList<>();
+        List<String> mList = new LinkedList<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
         log("removeAll(): " + mList);
-        List<String> tList = new ArrayList<>();
+        List<String> tList = new LinkedList<>();
         tList.add("test1");
         tList.add("test2");
         mList.removeAll(tList);
@@ -176,11 +176,11 @@ public class ArrayListActivity extends AppCompatActivity {
      * @param v
      */
     public void onRetainAll(View v) {
-        List<String> mList = new ArrayList<>();
+        List<String> mList = new LinkedList<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
-        List<String> tList = new ArrayList<>();
+        List<String> tList = new LinkedList<>();
         tList.add("test1");
         tList.add("test2");
         log("onRetainAll() mList: " + mList);
@@ -195,7 +195,7 @@ public class ArrayListActivity extends AppCompatActivity {
      * @param v
      */
     public void onSize(View v) {
-        List<String> mList = new ArrayList<>();
+        List<String> mList = new LinkedList<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
@@ -207,7 +207,7 @@ public class ArrayListActivity extends AppCompatActivity {
      * @param v
      */
     public void onToArray(View v) {
-        List<String> mList = new ArrayList<>();
+        List<String> mList = new LinkedList<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
@@ -226,7 +226,7 @@ public class ArrayListActivity extends AppCompatActivity {
      * @param v
      */
     public void onGet(View v) {
-        List<String> mList = new ArrayList<>();
+        List<String> mList = new LinkedList<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
@@ -239,7 +239,7 @@ public class ArrayListActivity extends AppCompatActivity {
      * @param v
      */
     public void onIndex(View v) {
-        List<String> mList = new ArrayList<>();
+        List<String> mList = new LinkedList<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
@@ -251,7 +251,7 @@ public class ArrayListActivity extends AppCompatActivity {
      * @param v
      */
     public void onLastIndexOf(View v) {
-        List<String> mList = new ArrayList<>();
+        List<String> mList = new LinkedList<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
@@ -264,7 +264,7 @@ public class ArrayListActivity extends AppCompatActivity {
      * @param v
      */
     public void onSet(View v) {
-        List<String> mList = new ArrayList<>();
+        List<String> mList = new LinkedList<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
@@ -278,7 +278,7 @@ public class ArrayListActivity extends AppCompatActivity {
      * @param v
      */
     public void onSubList(View v) {
-        List<String> mList = new ArrayList<>();
+        List<String> mList = new LinkedList<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
