@@ -26,9 +26,11 @@
                 android:value="" />
         </activity>
         <activity android:name=".safetest.SafeTestActivity" />
-        <activity android:name=".ArrayListActivity" />
-        <activity android:name=".LinkedListActivity" />
-        <activity android:name=".VectorActivity" />
+        <activity android:name=".list.ArrayListActivity" />
+        <activity android:name=".list.LinkedListActivity" />
+        <activity android:name=".list.VectorActivity" />
+        <activity android:name=".list.StackActivity" />
+
 
 
     </application>

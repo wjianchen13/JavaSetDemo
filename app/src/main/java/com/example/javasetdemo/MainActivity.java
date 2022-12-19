@@ -6,7 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.javasetdemo.list.ArrayListActivity;
+import com.example.javasetdemo.list.LinkedListActivity;
+import com.example.javasetdemo.list.StackActivity;
+import com.example.javasetdemo.list.VectorActivity;
 import com.example.javasetdemo.safetest.SafeTestActivity;
+
+import java.util.Stack;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -53,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
      * @param v
      */
     public void onStack(View v) {
-
+        startActivity(new Intent(this, StackActivity.class));
     }
 
     /**

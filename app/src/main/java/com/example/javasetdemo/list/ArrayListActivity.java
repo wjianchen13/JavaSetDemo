@@ -1,4 +1,4 @@
-package com.example.javasetdemo;
+package com.example.javasetdemo.list;
 
 import static com.example.javasetdemo.Utils.log;
 
@@ -8,14 +8,16 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.Vector;
+import com.example.javasetdemo.R;
+
+import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
 
 /**
- * Vector 相关使用方法
+ * ArrayList 相关使用方法
  */
-public class VectorActivity extends AppCompatActivity {
+public class ArrayListActivity extends AppCompatActivity {
 
     private TextView tvDes;
 
@@ -24,7 +26,7 @@ public class VectorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_arraylist);
         tvDes = findViewById(R.id.tv_des);
-        tvDes.setText("测试Vector");
+        tvDes.setText("测试ArrayList");
     }
 
     /**
@@ -32,7 +34,7 @@ public class VectorActivity extends AppCompatActivity {
      * @param v
      */
     public void onAdd(View v) {
-        List<String> mList = new Vector<>();
+        List<String> mList = new ArrayList<>();
         mList.add("test1");
         log("add(): " + mList);
     }
@@ -42,10 +44,10 @@ public class VectorActivity extends AppCompatActivity {
      * @param v
      */
     public void onAddAll(View v) {
-        List<String> tList = new Vector<>();
+        List<String> tList = new ArrayList<>();
         tList.add("test1");
         tList.add("test2");
-        List<String> mList = new Vector<>();
+        List<String> mList = new ArrayList<>();
         mList.addAll(tList);
         log("addAll(): " + mList);
     }
@@ -55,7 +57,7 @@ public class VectorActivity extends AppCompatActivity {
      * @param v
      */
     public void onClear(View v) {
-        List<String> mList = new Vector<>();
+        List<String> mList = new ArrayList<>();
         mList.add("test1");
         log("clear(): " + mList);
         mList.clear();
@@ -67,7 +69,7 @@ public class VectorActivity extends AppCompatActivity {
      * @param v
      */
     public void onContains(View v) {
-        List<String> tList = new Vector<>();
+        List<String> tList = new ArrayList<>();
         tList.add("test1");
         tList.add("test2");
         log("contains(): " + tList.contains("test2"));
@@ -78,11 +80,11 @@ public class VectorActivity extends AppCompatActivity {
      * @param v
      */
     public void onContainsAll(View v) {
-        List<String> mList = new Vector<>();
+        List<String> mList = new ArrayList<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
-        List<String> tList = new Vector<>();
+        List<String> tList = new ArrayList<>();
         tList.add("test1");
         tList.add("test2");
         log("containsAll(): " + mList.contains(tList));
@@ -93,7 +95,7 @@ public class VectorActivity extends AppCompatActivity {
      * @param v
      */
     public void onIsEmpty(View v) {
-        List<String> mList = new Vector<>();
+        List<String> mList = new ArrayList<>();
         log("isEmpty(): " + mList.isEmpty());
         mList.add("test1");
         log("isEmpty(): " + mList.isEmpty());
@@ -104,7 +106,7 @@ public class VectorActivity extends AppCompatActivity {
      * @param v
      */
     public void onIterator(View v) {
-        List<String> mList = new Vector<>();
+        List<String> mList = new ArrayList<>();
         //添加集合元素
         mList.add("鸡");
         mList.add("你");
@@ -143,7 +145,7 @@ public class VectorActivity extends AppCompatActivity {
      * @param v
      */
     public void onRemove(View v) {
-        List<String> mList = new Vector<>();
+        List<String> mList = new ArrayList<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
@@ -159,12 +161,12 @@ public class VectorActivity extends AppCompatActivity {
      * @param v
      */
     public void onRemoveAll(View v) {
-        List<String> mList = new Vector<>();
+        List<String> mList = new ArrayList<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
         log("removeAll(): " + mList);
-        List<String> tList = new Vector<>();
+        List<String> tList = new ArrayList<>();
         tList.add("test1");
         tList.add("test2");
         mList.removeAll(tList);
@@ -176,11 +178,11 @@ public class VectorActivity extends AppCompatActivity {
      * @param v
      */
     public void onRetainAll(View v) {
-        List<String> mList = new Vector<>();
+        List<String> mList = new ArrayList<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
-        List<String> tList = new Vector<>();
+        List<String> tList = new ArrayList<>();
         tList.add("test1");
         tList.add("test2");
         log("onRetainAll() mList: " + mList);
@@ -195,7 +197,7 @@ public class VectorActivity extends AppCompatActivity {
      * @param v
      */
     public void onSize(View v) {
-        List<String> mList = new Vector<>();
+        List<String> mList = new ArrayList<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
@@ -207,7 +209,7 @@ public class VectorActivity extends AppCompatActivity {
      * @param v
      */
     public void onToArray(View v) {
-        List<String> mList = new Vector<>();
+        List<String> mList = new ArrayList<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
@@ -226,7 +228,7 @@ public class VectorActivity extends AppCompatActivity {
      * @param v
      */
     public void onGet(View v) {
-        List<String> mList = new Vector<>();
+        List<String> mList = new ArrayList<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
@@ -239,7 +241,7 @@ public class VectorActivity extends AppCompatActivity {
      * @param v
      */
     public void onIndex(View v) {
-        List<String> mList = new Vector<>();
+        List<String> mList = new ArrayList<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
@@ -251,7 +253,7 @@ public class VectorActivity extends AppCompatActivity {
      * @param v
      */
     public void onLastIndexOf(View v) {
-        List<String> mList = new Vector<>();
+        List<String> mList = new ArrayList<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
@@ -264,7 +266,7 @@ public class VectorActivity extends AppCompatActivity {
      * @param v
      */
     public void onSet(View v) {
-        List<String> mList = new Vector<>();
+        List<String> mList = new ArrayList<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
@@ -278,7 +280,7 @@ public class VectorActivity extends AppCompatActivity {
      * @param v
      */
     public void onSubList(View v) {
-        List<String> mList = new Vector<>();
+        List<String> mList = new ArrayList<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");

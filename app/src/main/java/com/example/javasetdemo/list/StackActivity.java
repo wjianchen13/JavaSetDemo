@@ -1,4 +1,4 @@
-package com.example.javasetdemo;
+package com.example.javasetdemo.list;
 
 import static com.example.javasetdemo.Utils.log;
 
@@ -8,23 +8,25 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.LinkedList;
+import com.example.javasetdemo.R;
+
 import java.util.List;
 import java.util.ListIterator;
+import java.util.Stack;
 
 /**
- * LinkedList 相关使用方法
+ * Stack 相关使用方法
  */
-public class LinkedListActivity extends AppCompatActivity {
+public class StackActivity extends AppCompatActivity {
 
     private TextView tvDes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_arraylist);
+        setContentView(R.layout.activity_stack);
         tvDes = findViewById(R.id.tv_des);
-        tvDes.setText("测试LinkedList");
+        tvDes.setText("测试Stack");
     }
 
     /**
@@ -32,7 +34,7 @@ public class LinkedListActivity extends AppCompatActivity {
      * @param v
      */
     public void onAdd(View v) {
-        List<String> mList = new LinkedList<>();
+        List<String> mList = new Stack<>();
         mList.add("test1");
         log("add(): " + mList);
     }
@@ -42,10 +44,10 @@ public class LinkedListActivity extends AppCompatActivity {
      * @param v
      */
     public void onAddAll(View v) {
-        List<String> tList = new LinkedList<>();
+        List<String> tList = new Stack<>();
         tList.add("test1");
         tList.add("test2");
-        List<String> mList = new LinkedList<>();
+        List<String> mList = new Stack<>();
         mList.addAll(tList);
         log("addAll(): " + mList);
     }
@@ -55,7 +57,7 @@ public class LinkedListActivity extends AppCompatActivity {
      * @param v
      */
     public void onClear(View v) {
-        List<String> mList = new LinkedList<>();
+        List<String> mList = new Stack<>();
         mList.add("test1");
         log("clear(): " + mList);
         mList.clear();
@@ -67,7 +69,7 @@ public class LinkedListActivity extends AppCompatActivity {
      * @param v
      */
     public void onContains(View v) {
-        List<String> tList = new LinkedList<>();
+        List<String> tList = new Stack<>();
         tList.add("test1");
         tList.add("test2");
         log("contains(): " + tList.contains("test2"));
@@ -78,11 +80,11 @@ public class LinkedListActivity extends AppCompatActivity {
      * @param v
      */
     public void onContainsAll(View v) {
-        List<String> mList = new LinkedList<>();
+        List<String> mList = new Stack<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
-        List<String> tList = new LinkedList<>();
+        List<String> tList = new Stack<>();
         tList.add("test1");
         tList.add("test2");
         log("containsAll(): " + mList.contains(tList));
@@ -93,7 +95,7 @@ public class LinkedListActivity extends AppCompatActivity {
      * @param v
      */
     public void onIsEmpty(View v) {
-        List<String> mList = new LinkedList<>();
+        List<String> mList = new Stack<>();
         log("isEmpty(): " + mList.isEmpty());
         mList.add("test1");
         log("isEmpty(): " + mList.isEmpty());
@@ -104,7 +106,7 @@ public class LinkedListActivity extends AppCompatActivity {
      * @param v
      */
     public void onIterator(View v) {
-        List<String> mList = new LinkedList<>();
+        List<String> mList = new Stack<>();
         //添加集合元素
         mList.add("鸡");
         mList.add("你");
@@ -143,7 +145,7 @@ public class LinkedListActivity extends AppCompatActivity {
      * @param v
      */
     public void onRemove(View v) {
-        List<String> mList = new LinkedList<>();
+        List<String> mList = new Stack<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
@@ -159,12 +161,12 @@ public class LinkedListActivity extends AppCompatActivity {
      * @param v
      */
     public void onRemoveAll(View v) {
-        List<String> mList = new LinkedList<>();
+        List<String> mList = new Stack<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
         log("removeAll(): " + mList);
-        List<String> tList = new LinkedList<>();
+        List<String> tList = new Stack<>();
         tList.add("test1");
         tList.add("test2");
         mList.removeAll(tList);
@@ -176,11 +178,11 @@ public class LinkedListActivity extends AppCompatActivity {
      * @param v
      */
     public void onRetainAll(View v) {
-        List<String> mList = new LinkedList<>();
+        List<String> mList = new Stack<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
-        List<String> tList = new LinkedList<>();
+        List<String> tList = new Stack<>();
         tList.add("test1");
         tList.add("test2");
         log("onRetainAll() mList: " + mList);
@@ -195,7 +197,7 @@ public class LinkedListActivity extends AppCompatActivity {
      * @param v
      */
     public void onSize(View v) {
-        List<String> mList = new LinkedList<>();
+        List<String> mList = new Stack<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
@@ -207,7 +209,7 @@ public class LinkedListActivity extends AppCompatActivity {
      * @param v
      */
     public void onToArray(View v) {
-        List<String> mList = new LinkedList<>();
+        List<String> mList = new Stack<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
@@ -226,7 +228,7 @@ public class LinkedListActivity extends AppCompatActivity {
      * @param v
      */
     public void onGet(View v) {
-        List<String> mList = new LinkedList<>();
+        List<String> mList = new Stack<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
@@ -239,7 +241,7 @@ public class LinkedListActivity extends AppCompatActivity {
      * @param v
      */
     public void onIndex(View v) {
-        List<String> mList = new LinkedList<>();
+        List<String> mList = new Stack<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
@@ -251,7 +253,7 @@ public class LinkedListActivity extends AppCompatActivity {
      * @param v
      */
     public void onLastIndexOf(View v) {
-        List<String> mList = new LinkedList<>();
+        List<String> mList = new Stack<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
@@ -264,7 +266,7 @@ public class LinkedListActivity extends AppCompatActivity {
      * @param v
      */
     public void onSet(View v) {
-        List<String> mList = new LinkedList<>();
+        List<String> mList = new Stack<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
@@ -278,7 +280,7 @@ public class LinkedListActivity extends AppCompatActivity {
      * @param v
      */
     public void onSubList(View v) {
-        List<String> mList = new LinkedList<>();
+        List<String> mList = new Stack<>();
         mList.add("test1");
         mList.add("test2");
         mList.add("test3");
@@ -286,6 +288,54 @@ public class LinkedListActivity extends AppCompatActivity {
         log("subList():" + tList);
     }
 
+    /**
+     * empty()
+     * @param v
+     */
+    public void onEmpty(View v) {
+        
+    }
 
+    /**
+     * push()
+     * @param v
+     */
+    public void onPush(View v) {
+        Stack<String> mStack = new Stack<>();
+        mStack.push("test1");
+        mStack.push("test2");
+        mStack.push("test3");
+        log("mStack():" + mStack);
+
+    }
+
+    /**
+     * pop()
+     * @param v
+     */
+    public void onPop(View v) {
+        Stack<String> mStack = new Stack<>();
+        mStack.push("test1");
+        mStack.push("test2");
+        mStack.push("test3");
+        String item =  mStack.pop();
+        log("item = " + item + "   mStack():" + mStack);
+    }
+
+    /**
+     * peek()
+     * @param v
+     */
+    public void onPeek(View v) {
+
+    }
+
+    /**
+     * search()
+     * @param v
+     */
+    public void onSearch(View v) {
+
+    }
 
 }
