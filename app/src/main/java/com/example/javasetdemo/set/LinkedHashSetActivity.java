@@ -10,24 +10,23 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.javasetdemo.R;
 
-import java.util.SortedSet;
-import java.util.TreeSet;
+import java.util.LinkedHashSet;
 import java.util.Iterator;
 import java.util.Set;
 
 /**
- * TreeSet 相关使用方法
+ * LinkedHashSet 相关使用方法
  */
-public class TreeSetActivity extends AppCompatActivity {
+public class LinkedHashSetActivity extends AppCompatActivity {
 
     private TextView tvDes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_treeset);
+        setContentView(R.layout.activity_hashset);
         tvDes = findViewById(R.id.tv_des);
-        tvDes.setText("测试TreeSet");
+        tvDes.setText("测试LinkedHashSet");
     }
 
     /**
@@ -35,8 +34,11 @@ public class TreeSetActivity extends AppCompatActivity {
      * @param v
      */
     public void onAdd(View v) {
-        Set<String> set = new TreeSet<>();
+        Set<String> set = new LinkedHashSet<>();
+        set.add("test3");
         set.add("test1");
+        set.add("test2");
+        set.add("test4");
         log("add(): " + set);
     }
 
@@ -45,10 +47,10 @@ public class TreeSetActivity extends AppCompatActivity {
      * @param v
      */
     public void onAddAll(View v) {
-        Set<String> tList = new TreeSet<>();
-        tList.add("test1");
+        Set<String> tList = new LinkedHashSet<>();
         tList.add("test2");
-        Set<String> set = new TreeSet<>();
+        tList.add("test1");
+        Set<String> set = new LinkedHashSet<>();
         set.addAll(tList);
         log("addAll(): " + set);
     }
@@ -58,7 +60,7 @@ public class TreeSetActivity extends AppCompatActivity {
      * @param v
      */
     public void onClear(View v) {
-        Set<String> set = new TreeSet<>();
+        Set<String> set = new LinkedHashSet<>();
         set.add("test1");
         log("clear(): " + set);
         set.clear();
@@ -70,7 +72,7 @@ public class TreeSetActivity extends AppCompatActivity {
      * @param v
      */
     public void onContains(View v) {
-        Set<String> tList = new TreeSet<>();
+        Set<String> tList = new LinkedHashSet<>();
         tList.add("test1");
         tList.add("test2");
         log("contains(): " + tList.contains("test2"));
@@ -81,11 +83,11 @@ public class TreeSetActivity extends AppCompatActivity {
      * @param v
      */
     public void onContainsAll(View v) {
-        Set<String> set = new TreeSet<>();
+        Set<String> set = new LinkedHashSet<>();
         set.add("test1");
         set.add("test2");
         set.add("test3");
-        Set<String> tList = new TreeSet<>();
+        Set<String> tList = new LinkedHashSet<>();
         tList.add("test1");
         tList.add("test2");
         log("containsAll(): " + set.contains(tList));
@@ -96,7 +98,7 @@ public class TreeSetActivity extends AppCompatActivity {
      * @param v
      */
     public void onIsEmpty(View v) {
-        Set<String> set = new TreeSet<>();
+        Set<String> set = new LinkedHashSet<>();
         log("isEmpty(): " + set.isEmpty());
         set.add("test1");
         log("isEmpty(): " + set.isEmpty());
@@ -107,7 +109,7 @@ public class TreeSetActivity extends AppCompatActivity {
      * @param v
      */
     public void onIterator(View v) {
-        Set<String> set = new TreeSet<>();
+        Set<String> set = new LinkedHashSet<>();
         //添加集合元素
         set.add("鸡");
         set.add("你");
@@ -131,7 +133,7 @@ public class TreeSetActivity extends AppCompatActivity {
      * @param v
      */
     public void onRemove(View v) {
-        Set<String> set = new TreeSet<>();
+        Set<String> set = new LinkedHashSet<>();
         set.add("test1");
         set.add("test2");
         set.add("test3");
@@ -147,12 +149,12 @@ public class TreeSetActivity extends AppCompatActivity {
      * @param v
      */
     public void onRemoveAll(View v) {
-        Set<String> set = new TreeSet<>();
+        Set<String> set = new LinkedHashSet<>();
         set.add("test1");
         set.add("test2");
         set.add("test3");
         log("removeAll(): " + set);
-        Set<String> tList = new TreeSet<>();
+        Set<String> tList = new LinkedHashSet<>();
         tList.add("test1");
         tList.add("test2");
         set.removeAll(tList);
@@ -164,11 +166,11 @@ public class TreeSetActivity extends AppCompatActivity {
      * @param v
      */
     public void onRetainAll(View v) {
-        Set<String> set = new TreeSet<>();
+        Set<String> set = new LinkedHashSet<>();
         set.add("test1");
         set.add("test2");
         set.add("test3");
-        Set<String> tList = new TreeSet<>();
+        Set<String> tList = new LinkedHashSet<>();
         tList.add("test1");
         tList.add("test2");
         log("onRetainAll() set: " + set);
@@ -183,7 +185,7 @@ public class TreeSetActivity extends AppCompatActivity {
      * @param v
      */
     public void onSize(View v) {
-        Set<String> set = new TreeSet<>();
+        Set<String> set = new LinkedHashSet<>();
         set.add("test1");
         set.add("test2");
         set.add("test3");
@@ -195,7 +197,7 @@ public class TreeSetActivity extends AppCompatActivity {
      * @param v
      */
     public void onToArray(View v) {
-        Set<String> set = new TreeSet<>();
+        Set<String> set = new LinkedHashSet<>();
         set.add("test1");
         set.add("test2");
         set.add("test3");
@@ -207,108 +209,6 @@ public class TreeSetActivity extends AppCompatActivity {
         for(int i = 0; i < ts.length; i ++) {
             log("ts[" + i + "]:" + ts[i]);
         }
-    }
-
-    /**
-     * first()
-     * @param v
-     */
-    public void onFirst(View v) {
-        TreeSet<String> set = new TreeSet<>();
-        set.add("test1");
-        set.add("test2");
-        set.add("test3");
-        log("onFirst() set: " + set);
-        log("onFirst() first: " + set.first());
-    }
-
-    /**
-     * last()
-     * @param v
-     */
-    public void onLast(View v) {
-        TreeSet<String> set = new TreeSet<>();
-        set.add("test1");
-        set.add("test2");
-        set.add("test3");
-        log("onLast() set: " + set);
-        log("onLast() last: " + set.last());
-    }
-
-    /**
-     * pollFirst()
-     * @param v
-     */
-    public void onPollFirst(View v) {
-        TreeSet<String> set = new TreeSet<>();
-        set.add("test1");
-        set.add("test2");
-        set.add("test3");
-        log("onPollFirst() set: " + set);
-        log("onPollFirst() pollFirst: " + set.pollFirst());
-        log("onPollFirst() set: " + set);
-    }
-
-    /**
-     * pollLast()
-     * @param v
-     */
-    public void onPollLast(View v) {
-        TreeSet<String> set = new TreeSet<>();
-        set.add("test1");
-        set.add("test2");
-        set.add("test3");
-        log("onPollLast() set: " + set);
-        log("onPollLast() pollLast: " + set.pollLast());
-        log("onPollLast() set: " + set);
-    }
-
-    /**
-     * subSet()
-     * @param v
-     */
-    public void onSubSet(View v) {
-        TreeSet<String> set = new TreeSet<>();
-        set.add("test4");
-        set.add("test5");
-        set.add("test1");
-        set.add("test2");
-        set.add("test3");
-        SortedSet<String> sset = set.subSet("test2", "test5");
-        log("onSubSet() set: " + set);
-        log("onSubSet() sset: " + sset);
-    }
-
-    /**
-     * headSet()
-     * @param v
-     */
-    public void onHeadSet(View v) {
-        TreeSet<String> set = new TreeSet<>();
-        set.add("test1");
-        set.add("test2");
-        set.add("test3");
-        set.add("test4");
-        set.add("test5");
-        SortedSet<String> sset = set.headSet("test3");
-        log("headSet() set: " + set);
-        log("headSet() sset: " + sset);
-    }
-
-    /**
-     * tailSet()
-     * @param v
-     */
-    public void onTailSet(View v) {
-        TreeSet<String> set = new TreeSet<>();
-        set.add("test1");
-        set.add("test2");
-        set.add("test3");
-        set.add("test4");
-        set.add("test5");
-        SortedSet<String> sset = set.tailSet("test3");
-        log("headSet() set: " + set);
-        log("headSet() sset: " + sset);
     }
 
 }

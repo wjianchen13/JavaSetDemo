@@ -12,6 +12,7 @@ import com.example.javasetdemo.list.StackActivity;
 import com.example.javasetdemo.list.VectorActivity;
 import com.example.javasetdemo.safetest.SafeTestActivity;
 import com.example.javasetdemo.set.HashSetActivity;
+import com.example.javasetdemo.set.LinkedHashSetActivity;
 import com.example.javasetdemo.set.TreeSetActivity;
 
 import java.util.Stack;
@@ -77,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
      * @param v
      */
     public void onLinkedHashSet(View v) {
-
+        startActivity(new Intent(this, LinkedHashSetActivity.class));
     }
 
     /**

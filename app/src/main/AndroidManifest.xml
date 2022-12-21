@@ -33,6 +33,7 @@
 
         <activity android:name=".set.HashSetActivity" />
         <activity android:name=".set.TreeSetActivity" />
+        <activity android:name=".set.LinkedHashSetActivity" />
 
     </application>
 
