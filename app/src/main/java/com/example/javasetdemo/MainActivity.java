@@ -10,12 +10,11 @@ import com.example.javasetdemo.list.ArrayListActivity;
 import com.example.javasetdemo.list.LinkedListActivity;
 import com.example.javasetdemo.list.StackActivity;
 import com.example.javasetdemo.list.VectorActivity;
+import com.example.javasetdemo.map.HashMapActivity;
 import com.example.javasetdemo.safetest.SafeTestActivity;
 import com.example.javasetdemo.set.HashSetActivity;
 import com.example.javasetdemo.set.LinkedHashSetActivity;
 import com.example.javasetdemo.set.TreeSetActivity;
-
-import java.util.Stack;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -87,6 +86,30 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onTreeSet(View v) {
         startActivity(new Intent(this, TreeSetActivity.class));
+    }
+
+    /**
+     * HashMap
+     * @param v
+     */
+    public void onHashMap(View v) {
+        startActivity(new Intent(this, HashMapActivity.class));
+    }
+
+    /**
+     * LinkedHashMap
+     * @param v
+     */
+    public void onLinkedHashMap(View v) {
+
+    }
+
+    /**
+     * TreeMap
+     * @param v
+     */
+    public void onTreeMap(View v) {
+
     }
 
 }

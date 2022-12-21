@@ -12,127 +12,149 @@
         android:orientation="vertical" >
 
         <TextView
+            android:id="@+id/tv_des"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:gravity="center"
             android:textColor="#000000"
             android:textSize="15sp"
             android:layout_marginTop="@dimen/margin_top"
-            android:text="测试集合是否线程安全"/>
+            android:text="测试Map"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
-            android:text="测试"
-            android:onClick="onSafe"
-            android:layout_marginTop="@dimen/margin_top" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:gravity="center"
-            android:textColor="#000000"
-            android:textSize="15sp"
-            android:layout_marginTop="@dimen/margin_top"
-            android:text="List接口"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="ArrayList"
-            android:onClick="onArrayList"
+            android:text="map 遍历1"
+            android:onClick="onTraverse1"
             android:layout_marginTop="@dimen/margin_top" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
-            android:text="LinkedList"
-            android:onClick="onLinkedList"
+            android:text="map 遍历2"
+            android:onClick="onTraverse2"
             android:layout_marginTop="@dimen/margin_top" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
-            android:text="Vector"
-            android:onClick="onVector"
+            android:text="map 遍历3"
+            android:onClick="onTraverse3"
             android:layout_marginTop="@dimen/margin_top" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
-            android:text="Stack"
-            android:onClick="onStack"
-            android:layout_marginTop="@dimen/margin_top" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:gravity="center"
-            android:textColor="#000000"
-            android:textSize="15sp"
-            android:layout_marginTop="@dimen/margin_top"
-            android:text="Set接口"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="HashSet"
-            android:onClick="onHashSet"
+            android:text="map 遍历4"
+            android:onClick="onTraverse4"
             android:layout_marginTop="@dimen/margin_top" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
-            android:text="LinkedHashSet"
-            android:onClick="onLinkedHashSet"
+            android:text="clear()"
+            android:onClick="onClear"
             android:layout_marginTop="@dimen/margin_top" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
-            android:text="TreeSet"
-            android:onClick="onTreeSet"
-            android:layout_marginTop="@dimen/margin_top" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:gravity="center"
-            android:textColor="#000000"
-            android:textSize="15sp"
-            android:layout_marginTop="@dimen/margin_top"
-            android:text="Map接口"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="HashMap"
-            android:onClick="onHashMap"
+            android:text="containsKey()"
+            android:onClick="onContainsKey"
             android:layout_marginTop="@dimen/margin_top" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
-            android:text="LinkedHashMap"
-            android:onClick="onLinkedHashMap"
+            android:text="containsValue"
+            android:onClick="onContainsValue"
             android:layout_marginTop="@dimen/margin_top" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
-            android:text="TreeMap"
-            android:onClick="onTreeMap"
+            android:text="get"
+            android:onClick="onGet"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="put"
+            android:onClick="onPut"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="putAll"
+            android:onClick="onPutAll"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="remove"
+            android:onClick="onRemove"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="remove1()"
+            android:onClick="onRemove1"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="entrySet"
+            android:onClick="onEntrySet"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="keySet"
+            android:onClick="onKeySet"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="isEmpty"
+            android:onClick="onIsEmpty"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="size"
+            android:onClick="onSize"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="values"
+            android:onClick="onValues"
             android:layout_marginTop="@dimen/margin_top" />
 
     </LinearLayout>

@@ -35,6 +35,8 @@
         <activity android:name=".set.TreeSetActivity" />
         <activity android:name=".set.LinkedHashSetActivity" />
 
+        <activity android:name=".map.HashMapActivity" />
+
     </application>
 
 </manifest>
