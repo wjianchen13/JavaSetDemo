@@ -31,7 +31,8 @@
         <activity android:name=".list.VectorActivity" />
         <activity android:name=".list.StackActivity" />
 
-
+        <activity android:name=".set.HashSetActivity" />
+        <activity android:name=".set.TreeSetActivity" />
 
     </application>
 

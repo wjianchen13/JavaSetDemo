@@ -293,7 +293,10 @@ public class StackActivity extends AppCompatActivity {
      * @param v
      */
     public void onEmpty(View v) {
-        
+        Stack<String> mStack = new Stack<>();
+        log("mStack() isEmpty:" + mStack.isEmpty());
+        mStack.push("test1");
+        log("mStack() isEmpty:" + mStack.isEmpty());
     }
 
     /**
@@ -327,7 +330,12 @@ public class StackActivity extends AppCompatActivity {
      * @param v
      */
     public void onPeek(View v) {
-
+        Stack<String> mStack = new Stack<>();
+        mStack.push("test1");
+        mStack.push("test2");
+        mStack.push("test3");
+        String item =  mStack.peek();
+        log("item = " + item + "   mStack():" + mStack);
     }
 
     /**
@@ -335,7 +343,12 @@ public class StackActivity extends AppCompatActivity {
      * @param v
      */
     public void onSearch(View v) {
-
+        Stack<String> mStack = new Stack<>();
+        mStack.push("test1");
+        mStack.push("test2");
+        mStack.push("test3");
+        int index =  mStack.search("test1");
+        log("index = " + index + "   mStack():" + mStack);
     }
 
 }

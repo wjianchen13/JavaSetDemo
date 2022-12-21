@@ -11,6 +11,8 @@ import com.example.javasetdemo.list.LinkedListActivity;
 import com.example.javasetdemo.list.StackActivity;
 import com.example.javasetdemo.list.VectorActivity;
 import com.example.javasetdemo.safetest.SafeTestActivity;
+import com.example.javasetdemo.set.HashSetActivity;
+import com.example.javasetdemo.set.TreeSetActivity;
 
 import java.util.Stack;
 
@@ -63,19 +65,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * TreeSet
-     * @param v
-     */
-    public void onTreeSet(View v) {
-
-    }
-
-    /**
      * HashSet
      * @param v
      */
     public void onHashSet(View v) {
-
+        startActivity(new Intent(this, HashSetActivity.class));
     }
 
     /**
@@ -85,4 +79,13 @@ public class MainActivity extends AppCompatActivity {
     public void onLinkedHashSet(View v) {
 
     }
+
+    /**
+     * TreeSet
+     * @param v
+     */
+    public void onTreeSet(View v) {
+        startActivity(new Intent(this, TreeSetActivity.class));
+    }
+
 }
