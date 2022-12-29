@@ -11,16 +11,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.javasetdemo.R;
 
 import java.util.Collection;
-import java.util.HashMap;
+import java.util.TreeMap;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
 /**
- * HashMap 相关使用方法
+ * TreeMap 相关使用方法
  */
-public class HashMapActivity extends AppCompatActivity {
+public class TreeMapActivity extends AppCompatActivity {
 
     private TextView tvDes;
 
@@ -29,7 +28,7 @@ public class HashMapActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
         tvDes = findViewById(R.id.tv_des);
-        tvDes.setText("测试HashMap");
+        tvDes.setText("测试TreeMap");
     }
 
     /**
@@ -37,7 +36,7 @@ public class HashMapActivity extends AppCompatActivity {
      * @param v
      */
     public void onTraverse1(View v) {
-        Map<Integer, String> map = new HashMap<>();
+        Map<Integer, String> map = new TreeMap<>();
         map.put(1, "test1");
         map.put(2, "test2");
         map.put(3, "test3");
@@ -53,7 +52,7 @@ public class HashMapActivity extends AppCompatActivity {
      * @param v
      */
     public void onTraverse2(View v) {
-        Map<Integer, String> map = new HashMap<>();
+        Map<Integer, String> map = new TreeMap<>();
         map.put(1, "test1");
         map.put(2, "test2");
         map.put(3, "test3");
@@ -72,7 +71,7 @@ public class HashMapActivity extends AppCompatActivity {
      * @param v
      */
     public void onTraverse3(View v) {
-        Map<Integer, String> map = new HashMap<>();
+        Map<Integer, String> map = new TreeMap<>();
         map.put(1, "test1");
         map.put(2, "test2");
         map.put(3, "test3");
@@ -90,7 +89,7 @@ public class HashMapActivity extends AppCompatActivity {
      * @param v
      */
     public void onTraverse4(View v) {
-        Map<Integer, String> map = new HashMap<>();
+        Map<Integer, String> map = new TreeMap<>();
         map.put(1, "test1");
         map.put(2, "test2");
         map.put(3, "test3");
@@ -105,7 +104,7 @@ public class HashMapActivity extends AppCompatActivity {
      * @param v
      */
     public void onClear(View v) {
-        Map<Integer, String> map = new HashMap<>();
+        Map<Integer, String> map = new TreeMap<>();
         map.put(1, "test1");
         map.put(3, "test3");
         map.put(2, "test2");
@@ -119,7 +118,7 @@ public class HashMapActivity extends AppCompatActivity {
      * @param v
      */
     public void onContainsKey(View v) {
-        Map<Integer, String> map = new HashMap<>();
+        Map<Integer, String> map = new TreeMap<>();
         map.put(1, "test1");
         map.put(3, "test3");
         map.put(2, "test2");
@@ -132,7 +131,7 @@ public class HashMapActivity extends AppCompatActivity {
      * @param v
      */
     public void onContainsValue(View v) {
-        Map<Integer, String> map = new HashMap<>();
+        Map<Integer, String> map = new TreeMap<>();
         map.put(1, "test1");
         map.put(3, "test3");
         map.put(2, "test2");
@@ -145,7 +144,7 @@ public class HashMapActivity extends AppCompatActivity {
      * @param v
      */
     public void onGet(View v) {
-        Map<Integer, String> map = new HashMap<>();
+        Map<Integer, String> map = new TreeMap<>();
         map.put(1, "test1");
         map.put(3, "test3");
         map.put(2, "test2");
@@ -157,7 +156,7 @@ public class HashMapActivity extends AppCompatActivity {
      * @param v
      */
     public void onPut(View v) {
-        Map<Integer, String> map = new HashMap<>();
+        Map<Integer, String> map = new TreeMap<>();
         map.put(1, "test1");
         map.put(3, "test3");
         map.put(2, "test2");
@@ -169,12 +168,12 @@ public class HashMapActivity extends AppCompatActivity {
      * @param v
      */
     public void onPutAll(View v) {
-        Map<Integer, String> map = new HashMap<>();
+        Map<Integer, String> map = new TreeMap<>();
         map.put(1, "test1");
         map.put(3, "test3");
         map.put(2, "test2");
         log("onPut() map: " + map);
-        Map<Integer, String> map1 = new HashMap<>();
+        Map<Integer, String> map1 = new TreeMap<>();
         map1.put(5, "test5");
         map1.put(6, "test6");
         map1.put(4, "test4");
@@ -189,7 +188,7 @@ public class HashMapActivity extends AppCompatActivity {
      * @param v
      */
     public void onRemove(View v) {
-        Map<Integer, String> map = new HashMap<>();
+        Map<Integer, String> map = new TreeMap<>();
         map.put(1, "test1");
         map.put(3, "test3");
         map.put(2, "test2");
@@ -203,7 +202,7 @@ public class HashMapActivity extends AppCompatActivity {
      * @param v
      */
     public void onRemove1(View v) {
-        Map<Integer, String> map = new HashMap<>();
+        Map<Integer, String> map = new TreeMap<>();
         map.put(1, "test1");
         map.put(3, "test3");
         map.put(2, "test2");
@@ -221,7 +220,7 @@ public class HashMapActivity extends AppCompatActivity {
      * @param v
      */
     public void onEntrySet(View v) {
-        Map<Integer, String> map = new HashMap<>();
+        Map<Integer, String> map = new TreeMap<>();
         map.put(1, "test1");
         map.put(3, "test3");
         map.put(2, "test2");
@@ -240,7 +239,7 @@ public class HashMapActivity extends AppCompatActivity {
      * @param v
      */
     public void onKeySet(View v) {
-        Map<Integer, String> map = new HashMap<>();
+        Map<Integer, String> map = new TreeMap<>();
         map.put(1, "test1");
         map.put(2, "test2");
         map.put(3, "test3");
@@ -255,7 +254,7 @@ public class HashMapActivity extends AppCompatActivity {
      * @param v
      */
     public void onIsEmpty(View v) {
-        Map<Integer, String> map = new HashMap<>();
+        Map<Integer, String> map = new TreeMap<>();
         log("onIsEmpty() map isEmpty: " + map.isEmpty());
         map.put(1, "test1");
         map.put(2, "test2");
@@ -268,7 +267,7 @@ public class HashMapActivity extends AppCompatActivity {
      * @param v
      */
     public void onSize(View v) {
-        Map<Integer, String> map = new HashMap<>();
+        Map<Integer, String> map = new TreeMap<>();
         map.put(1, "test1");
         map.put(2, "test2");
         map.put(3, "test3");
@@ -280,7 +279,7 @@ public class HashMapActivity extends AppCompatActivity {
      * @param v
      */
     public void onValues(View v) {
-        Map<Integer, String> map = new HashMap<>();
+        Map<Integer, String> map = new TreeMap<>();
         map.put(1, "test1");
         map.put(2, "test2");
         map.put(3, "test3");

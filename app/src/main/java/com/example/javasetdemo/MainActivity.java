@@ -6,11 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.javasetdemo.iterator.IteratorActivity;
 import com.example.javasetdemo.list.ArrayListActivity;
 import com.example.javasetdemo.list.LinkedListActivity;
 import com.example.javasetdemo.list.StackActivity;
 import com.example.javasetdemo.list.VectorActivity;
 import com.example.javasetdemo.map.HashMapActivity;
+import com.example.javasetdemo.map.LinkedHashMapActivity;
+import com.example.javasetdemo.map.TreeMapActivity;
 import com.example.javasetdemo.safetest.SafeTestActivity;
 import com.example.javasetdemo.set.HashSetActivity;
 import com.example.javasetdemo.set.LinkedHashSetActivity;
@@ -101,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
      * @param v
      */
     public void onLinkedHashMap(View v) {
-
+        startActivity(new Intent(this, LinkedHashMapActivity.class));
     }
 
     /**
@@ -109,7 +112,14 @@ public class MainActivity extends AppCompatActivity {
      * @param v
      */
     public void onTreeMap(View v) {
-
+        startActivity(new Intent(this, TreeMapActivity.class));
     }
 
+    /**
+     * Iterator 迭代器测试
+     * @param v
+     */
+    public void onIterator(View v) {
+        startActivity(new Intent(this, IteratorActivity.class));
+    }
 }

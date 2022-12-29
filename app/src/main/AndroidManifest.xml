@@ -36,6 +36,10 @@
         <activity android:name=".set.LinkedHashSetActivity" />
 
         <activity android:name=".map.HashMapActivity" />
+        <activity android:name=".map.LinkedHashMapActivity" />
+        <activity android:name=".map.TreeMapActivity" />
+
+        <activity android:name=".iterator.IteratorActivity" />
 
     </application>
 
