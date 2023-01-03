@@ -36,7 +36,10 @@ public class HashSetActivity extends AppCompatActivity {
      */
     public void onAdd(View v) {
         Set<String> set = new HashSet<>();
+        set.add("test3");
         set.add("test1");
+        set.add("test1");
+        set.add("test2");
         log("add(): " + set);
     }
 

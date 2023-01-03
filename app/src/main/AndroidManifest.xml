@@ -41,6 +41,9 @@
 
         <activity android:name=".iterator.IteratorActivity" />
 
+        <activity android:name=".comparator.ComparatorActivity" />
+
+
     </application>
 
 </manifest>

@@ -38,8 +38,16 @@ public class TreeMapActivity extends AppCompatActivity {
     public void onTraverse1(View v) {
         Map<Integer, String> map = new TreeMap<>();
         map.put(1, "test1");
-        map.put(2, "test2");
         map.put(3, "test3");
+        map.put(6, "test6");
+        map.put(7, "test7");
+        map.put(10, "test10");
+        map.put(2, "test2");
+        map.put(4, "test4");
+        map.put(9, "test9");
+        map.put(8, "test8");
+        map.put(5, "test5");
+
         for (Map.Entry<Integer, String> entry : map.entrySet()) {
             int mapKey = entry.getKey();
             String mapValue = entry.getValue();

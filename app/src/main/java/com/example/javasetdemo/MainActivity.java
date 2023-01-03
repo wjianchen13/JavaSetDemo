@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.javasetdemo.comparator.ComparatorActivity;
 import com.example.javasetdemo.iterator.IteratorActivity;
 import com.example.javasetdemo.list.ArrayListActivity;
 import com.example.javasetdemo.list.LinkedListActivity;
@@ -122,4 +123,13 @@ public class MainActivity extends AppCompatActivity {
     public void onIterator(View v) {
         startActivity(new Intent(this, IteratorActivity.class));
     }
+
+    /**
+     * Comparator 比较器测试
+     * @param v
+     */
+    public void onComparator(View v) {
+        startActivity(new Intent(this, ComparatorActivity.class));
+    }
+
 }
