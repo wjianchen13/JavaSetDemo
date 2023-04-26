@@ -35,7 +35,8 @@ public class RBTreeActivity extends AppCompatActivity {
      * @param v
      */
     public void onTest2(View v) {
-
+        mRBTree.insert(2);
+        mRBTree.print();
     }
 
     /**
@@ -43,7 +44,8 @@ public class RBTreeActivity extends AppCompatActivity {
      * @param v
      */
     public void onTest3(View v) {
-
+        mRBTree.insert(3);
+        mRBTree.print();
     }
 
     /**
