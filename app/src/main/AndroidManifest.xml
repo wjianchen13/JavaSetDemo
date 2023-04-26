@@ -25,23 +25,27 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name=".safetest.SafeTestActivity" />
-        <activity android:name=".list.ArrayListActivity" />
-        <activity android:name=".list.LinkedListActivity" />
-        <activity android:name=".list.VectorActivity" />
-        <activity android:name=".list.StackActivity" />
+        <activity android:name=".javaset.JavaSetActivity" />
+        <activity android:name=".javaset.safetest.SafeTestActivity" />
+        <activity android:name=".javaset.list.ArrayListActivity" />
+        <activity android:name=".javaset.list.LinkedListActivity" />
+        <activity android:name=".javaset.list.VectorActivity" />
+        <activity android:name=".javaset.list.StackActivity" />
 
-        <activity android:name=".set.HashSetActivity" />
-        <activity android:name=".set.TreeSetActivity" />
-        <activity android:name=".set.LinkedHashSetActivity" />
+        <activity android:name=".javaset.set.HashSetActivity" />
+        <activity android:name=".javaset.set.TreeSetActivity" />
+        <activity android:name=".javaset.set.LinkedHashSetActivity" />
 
-        <activity android:name=".map.HashMapActivity" />
-        <activity android:name=".map.LinkedHashMapActivity" />
-        <activity android:name=".map.TreeMapActivity" />
+        <activity android:name=".javaset.map.HashMapActivity" />
+        <activity android:name=".javaset.map.LinkedHashMapActivity" />
+        <activity android:name=".javaset.map.TreeMapActivity" />
 
-        <activity android:name=".iterator.IteratorActivity" />
+        <activity android:name=".javaset.iterator.IteratorActivity" />
 
-        <activity android:name=".comparator.ComparatorActivity" />
+        <activity android:name=".javaset.comparator.ComparatorActivity" />
+        <activity android:name=".xiangxue.XiangXueActivity" />
+        <activity android:name=".xiangxue.tree.TreeActivity" />
+        <activity android:name=".xiangxue.tree.rb.RBTreeActivity" />
 
 
     </application>

@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.javasetdemo'
+    namespace 'com.example.data'
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.javasetdemo"
+        applicationId "com.example.data"
         minSdk 21
         targetSdk 32
         versionCode 1

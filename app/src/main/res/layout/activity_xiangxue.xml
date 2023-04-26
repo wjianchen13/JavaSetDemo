@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="享学课堂教程"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="tree"
+            android:onClick="onTree"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="ArrayList"
+            android:onClick="onArrayList"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="LinkedList"
+            android:onClick="onLinkedList"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Vector"
+            android:onClick="onVector"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Stack"
+            android:onClick="onStack"
+            android:layout_marginTop="@dimen/margin_top" />
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="HashSet"
+            android:onClick="onHashSet"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="LinkedHashSet"
+            android:onClick="onLinkedHashSet"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="TreeSet"
+            android:onClick="onTreeSet"
+            android:layout_marginTop="@dimen/margin_top" />
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="HashMap"
+            android:onClick="onHashMap"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="LinkedHashMap"
+            android:onClick="onLinkedHashMap"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="TreeMap"
+            android:onClick="onTreeMap"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Iterator 测试"
+            android:onClick="onIterator"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Comparator 测试"
+            android:onClick="onComparator"
+            android:layout_marginTop="@dimen/margin_top" />
+
+    </LinearLayout>
+
+</ScrollView>

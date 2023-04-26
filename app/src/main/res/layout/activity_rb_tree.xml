@@ -18,22 +18,55 @@
             android:textColor="#000000"
             android:textSize="15sp"
             android:layout_marginTop="@dimen/margin_top"
-            android:text="数据结构"/>
+            android:text="Tree"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
-            android:text="java集合框架"
+            android:text="插入1"
             android:onClick="onTest1"
             android:layout_marginTop="@dimen/margin_top" />
-        
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
-            android:text="享学课堂"
+            android:text="插入2"
             android:onClick="onTest2"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="插入3"
+            android:onClick="onTest4"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="插入4"
+            android:onClick="onTest4"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="插入5"
+            android:onClick="onTest5"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="插入6"
+            android:onClick="onTest6
+"
             android:layout_marginTop="@dimen/margin_top" />
 
     </LinearLayout>
