@@ -42,7 +42,7 @@
         <activity android:name=".iterator.IteratorActivity" />
 
         <activity android:name=".comparator.ComparatorActivity" />
-
+        <activity android:name=".other.ConcurrentLinkedQueueActivity" />
 
     </application>
 

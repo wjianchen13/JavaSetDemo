@@ -15,6 +15,7 @@ import com.example.javasetdemo.list.VectorActivity;
 import com.example.javasetdemo.map.HashMapActivity;
 import com.example.javasetdemo.map.LinkedHashMapActivity;
 import com.example.javasetdemo.map.TreeMapActivity;
+import com.example.javasetdemo.other.ConcurrentLinkedQueueActivity;
 import com.example.javasetdemo.safetest.SafeTestActivity;
 import com.example.javasetdemo.set.HashSetActivity;
 import com.example.javasetdemo.set.LinkedHashSetActivity;
@@ -132,4 +133,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, ComparatorActivity.class));
     }
 
+    /**
+     * ConcurrentLinkedQueue 测试
+     * @param v
+     */
+    public void onConcurrentLinkedQueue(View v) {
+        startActivity(new Intent(this, ConcurrentLinkedQueueActivity.class));
+    }
 }

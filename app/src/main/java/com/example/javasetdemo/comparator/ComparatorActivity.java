@@ -59,7 +59,6 @@ public class ComparatorActivity extends AppCompatActivity {
             //降序：后面会具体分析为什么降序
 //            return o2.a - o1.a;
         }
-
     }
 
     /**
