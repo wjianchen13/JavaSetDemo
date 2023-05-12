@@ -37,15 +37,6 @@
             android:layout_marginTop="@dimen/margin_top" />
 
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="ConcurrentLinkedQueue 测试"
-            android:onClick="onConcurrentLinkedQueue"
-            android:layout_marginTop="@dimen/margin_top" />
-
-
     </LinearLayout>
 
 </ScrollView>

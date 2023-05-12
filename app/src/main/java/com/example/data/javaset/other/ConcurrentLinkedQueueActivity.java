@@ -1,4 +1,4 @@
-package com.example.javasetdemo.other;
+package com.example.data.javaset.other;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,7 +6,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.javasetdemo.R;
+import com.example.data.R;
 
 import java.util.ArrayList;
 import java.util.Iterator;

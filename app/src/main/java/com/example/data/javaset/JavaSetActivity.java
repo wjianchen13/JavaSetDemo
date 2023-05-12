@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.data.R;
+import com.example.data.javaset.other.ConcurrentLinkedQueueActivity;
 import com.example.data.javaset.comparator.ComparatorActivity;
 import com.example.data.javaset.iterator.IteratorActivity;
 import com.example.data.javaset.list.ArrayListActivity;
@@ -131,6 +132,14 @@ public class JavaSetActivity extends AppCompatActivity {
      */
     public void onComparator(View v) {
         startActivity(new Intent(this, ComparatorActivity.class));
+    }
+
+    /**
+     * onConcurrentLinkedQueue
+     * @param v
+     */
+    public void onConcurrentLinkedQueue(View v) {
+        startActivity(new Intent(this, ConcurrentLinkedQueueActivity.class));
     }
 
 }

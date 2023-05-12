@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.data.javaset.JavaSetActivity;
 import com.example.data.xiangxue.XiangXueActivity;
+import com.example.data.R;
 
 public class MainActivity extends AppCompatActivity {
 
