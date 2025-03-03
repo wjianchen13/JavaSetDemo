@@ -44,6 +44,7 @@
 
         <activity android:name=".javaset.comparator.ComparatorActivity" />
         <activity android:name=".javaset.other.ConcurrentLinkedQueueActivity" />
+        <activity android:name=".javaset.other.TestActivity1" />
 
         <activity android:name=".xiangxue.XiangXueActivity" />
         <activity android:name=".xiangxue.tree.TreeActivity" />

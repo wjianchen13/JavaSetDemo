@@ -17,6 +17,7 @@ import com.example.data.javaset.list.VectorActivity;
 import com.example.data.javaset.map.HashMapActivity;
 import com.example.data.javaset.map.LinkedHashMapActivity;
 import com.example.data.javaset.map.TreeMapActivity;
+import com.example.data.javaset.other.TestActivity1;
 import com.example.data.javaset.safetest.SafeTestActivity;
 import com.example.data.javaset.set.HashSetActivity;
 import com.example.data.javaset.set.LinkedHashSetActivity;
@@ -140,6 +141,14 @@ public class JavaSetActivity extends AppCompatActivity {
      */
     public void onConcurrentLinkedQueue(View v) {
         startActivity(new Intent(this, ConcurrentLinkedQueueActivity.class));
+    }
+
+    /**
+     * 哈希值测试
+     * @param v
+     */
+    public void onTest1(View v) {
+        startActivity(new Intent(this, TestActivity1.class));
     }
 
 }

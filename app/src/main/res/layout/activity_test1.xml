@@ -19,30 +19,14 @@
             android:textColor="#000000"
             android:textSize="15sp"
             android:layout_marginTop="@dimen/margin_top"
-            android:text="测试ArrayList"/>
+            android:text="测试Map"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
-            android:text="add()"
+            android:text="add"
             android:onClick="onAdd"
-            android:layout_marginTop="@dimen/margin_top" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="addAll()"
-            android:onClick="onAddAll"
-            android:layout_marginTop="@dimen/margin_top" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="clear"
-            android:onClick="onClear"
             android:layout_marginTop="@dimen/margin_top" />
 
         <Button
@@ -57,23 +41,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
-            android:text="containsAll"
-            android:onClick="onContainsAll"
-            android:layout_marginTop="@dimen/margin_top" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
             android:text="isEmpty"
-            android:onClick="onIsEmpty"
+            android:onClick="isEmpty"
             android:layout_marginTop="@dimen/margin_top" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
-            android:text="Iterator"
+            android:text="iterator"
             android:onClick="onIterator"
             android:layout_marginTop="@dimen/margin_top" />
 
@@ -81,24 +57,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
-            android:text="remove()"
+            android:text="offer()"
+            android:onClick="onOffer"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="peek()"
+            android:onClick="onPeek"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="poll"
+            android:onClick="onPoll"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="remove"
             android:onClick="onRemove"
-            android:layout_marginTop="@dimen/margin_top" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="removeAll"
-            android:onClick="onRemoveAll"
-            android:layout_marginTop="@dimen/margin_top" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="retainAll"
-            android:onClick="onRetainAll"
             android:layout_marginTop="@dimen/margin_top" />
 
         <Button
@@ -121,48 +105,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
-            android:text="get"
-            android:onClick="onGet"
-            android:layout_marginTop="@dimen/margin_top" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="index"
-            android:onClick="onIndex"
-            android:layout_marginTop="@dimen/margin_top" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="lastIndexOf"
-            android:onClick="onLastIndexOf"
-            android:layout_marginTop="@dimen/margin_top" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="set"
-            android:onClick="onSet"
-            android:layout_marginTop="@dimen/margin_top" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="subList"
-            android:onClick="onSubList"
-            android:layout_marginTop="@dimen/margin_top" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="测试迭代器遍历插入的情况"
-            android:onClick="onTest1"
+            android:text="测试"
+            android:onClick="onTest"
             android:layout_marginTop="@dimen/margin_top" />
 
     </LinearLayout>
