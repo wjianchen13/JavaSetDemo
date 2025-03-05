@@ -182,8 +182,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
-            android:text="哈希值测试"
+            android:text="测试"
             android:onClick="onTest1"
+            android:layout_marginTop="@dimen/margin_top" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="哈希值测试"
+            android:onClick="onTest2"
             android:layout_marginTop="@dimen/margin_top" />
 
     </LinearLayout>

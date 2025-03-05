@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.data.R;
+import com.example.data.javaset.map.hash.TestHashActivity1;
 import com.example.data.javaset.other.ConcurrentLinkedQueueActivity;
 import com.example.data.javaset.comparator.ComparatorActivity;
 import com.example.data.javaset.iterator.IteratorActivity;
@@ -144,11 +145,19 @@ public class JavaSetActivity extends AppCompatActivity {
     }
 
     /**
-     * 哈希值测试
+     * 测试
      * @param v
      */
     public void onTest1(View v) {
         startActivity(new Intent(this, TestActivity1.class));
+    }
+
+    /**
+     * 哈希值测试
+     * @param v
+     */
+    public void onTest2(View v) {
+        startActivity(new Intent(this, TestHashActivity1.class));
     }
 
 }
