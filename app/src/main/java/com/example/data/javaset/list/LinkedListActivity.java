@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.data.javaset.Utils;
 import com.example.data.R;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
@@ -287,6 +288,40 @@ public class LinkedListActivity extends AppCompatActivity {
         Utils.log("subList():" + tList);
     }
 
+    /**
+     * subList()
+     * @param v
+     */
+    public void onTest1(View v) {
+        List<QueueSort> mList = new LinkedList<>();
+        mList.add(new QueueSort(1, "test1"));
+        mList.add(new QueueSort(2, "test2"));
+        mList.add(new QueueSort(3, "test3"));
 
+        Iterator<QueueSort> iterator = mList.iterator();
+        int i = 0;
+        int index = -1;
+        QueueSort o = new QueueSort(1, "test3");
+        while (iterator.hasNext()) {
+            QueueSort queueSort = iterator.next();
+            if (((QueueSort) o).level() > ((QueueSort) queueSort).level()) {
+                Utils.log("is more important than------->");
+                if (isCutInLine(o, queueSort)){
+                    index = i;
+                }
+                break;
+            }
+            i ++;
+        }
+        index =  3;
+        if (index > -1)
+            mList.add(index, o);
+
+        Utils.log("subList():" + mList);
+    }
+
+    private boolean isCutInLine(QueueSort q1, QueueSort a2) {
+        return true;
+    }
 
 }

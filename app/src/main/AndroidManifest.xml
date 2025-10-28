@@ -39,11 +39,13 @@
         <activity android:name=".javaset.map.HashMapActivity" />
         <activity android:name=".javaset.map.LinkedHashMapActivity" />
         <activity android:name=".javaset.map.TreeMapActivity" />
+        <activity android:name=".javaset.map.hash.TestHashActivity1" />
 
         <activity android:name=".javaset.iterator.IteratorActivity" />
 
         <activity android:name=".javaset.comparator.ComparatorActivity" />
         <activity android:name=".javaset.other.ConcurrentLinkedQueueActivity" />
+        <activity android:name=".javaset.other.TestActivity1" />
 
         <activity android:name=".xiangxue.XiangXueActivity" />
         <activity android:name=".xiangxue.tree.TreeActivity" />
