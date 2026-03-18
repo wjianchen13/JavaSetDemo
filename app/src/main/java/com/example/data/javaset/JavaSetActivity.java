@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.data.R;
 import com.example.data.javaset.map.hash.TestHashActivity1;
+import com.example.data.javaset.map.hashcode.HashCodeActivity;
 import com.example.data.javaset.other.ConcurrentLinkedQueueActivity;
 import com.example.data.javaset.comparator.ComparatorActivity;
 import com.example.data.javaset.iterator.IteratorActivity;
@@ -94,6 +95,14 @@ public class JavaSetActivity extends AppCompatActivity {
      */
     public void onTreeSet(View v) {
         startActivity(new Intent(this, TreeSetActivity.class));
+    }
+
+    /**
+     * HashCode
+     * @param v
+     */
+    public void onHashCode(View v) {
+        startActivity(new Intent(this, HashCodeActivity.class));
     }
 
     /**

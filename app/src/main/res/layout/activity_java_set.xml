@@ -115,6 +115,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
+            android:text="HashCode测试"
+            android:onClick="onHashCode"
+            android:layout_marginTop="@dimen/margin_top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
             android:text="HashMap"
             android:onClick="onHashMap"
             android:layout_marginTop="@dimen/margin_top" />
